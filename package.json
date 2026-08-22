@@ -4,9 +4,9 @@
   "private": true,
   "packageManager": "pnpm@10.13.1",
   "scripts": {
-    "dev": "next dev",
-    "build": "prisma generate && next build",
-    "start": "next start",
+    "dev": "node api.js && next dev",
+    "build": "node api.js && prisma generate && next build",
+    "start": "node api.js && next start",
     "lint": "next lint",
     "build:email": "email build",
     "dev:email": "email dev",
